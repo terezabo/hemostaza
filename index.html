@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemokoagulace</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="fs-primary-heading">Koagulační kaskáda</h1>
+    </div>
+    <div class="factors">
+      <h4>Koagulační faktory:</h4>
+      <div class="draggable" id="I" draggable="true">
+        <h4>I</h4>
+      </div>
+      <div class="draggable" id="Ia" draggable="true">
+        <h4>Ia</h4>
+      </div>
+       <div class="draggable" id="II" draggable="true">
+        <h4>II</h4>
+      </div>
+      <div class="draggable" id="IIa" draggable="true">
+        <h4>IIa</h4>
+      </div>
+      <div class="draggable" id="V" draggable="true">
+        <h4>V</h4>
+      </div>
+      <div class="draggable" id="Va" draggable="true">
+        <h4>Va</h4>
+      </div>
+      <div class="draggable" id="VII" draggable="true">
+        <h4>VII</h4>
+      </div>
+      <div class="draggable" id="VIIa" draggable="true">
+        <h4>VIIa</h4>
+      </div>
+      <div class="draggable" id="VIII" draggable="true">
+        <h4>VIII</h4>
+      </div>
+      <div class="draggable" id="IX" draggable="true">
+        <h4>IX</h4>
+      </div>
+      <div class="draggable" id="IXa" draggable="true">
+        <h4>IXa</h4>
+      </div>
+      <div class="draggable" id="Xa" draggable="true">
+        <h4>Xa</h4>
+      </div>
+      <div class="draggable" id="XI" draggable="true">
+        <h4>XI</h4>
+      </div>
+      <div class="draggable" id="XIa" draggable="true">
+        <h4>XIa</h4>
+      </div>
+      <div class="draggable" id="XII" draggable="true">
+        <h4>XII</h4>
+      </div>
+      <div class="draggable" id="XIIa" draggable="true">
+        <h4>XIIa</h4>
+      </div>
+      <div class="draggable" id="XIII" draggable="true">
+        <h4>XIII</h4>
+      </div>
+      <div class="draggable" id="XIIIa" draggable="true">
+        <h4>XIIIa</h4>
+      </div>
+      <div class="draggable" id="PL-VIIIa" draggable="true">
+        <h4>PL-Ca2+-IXa-VIIa</h4>
+      </div>
+      <div class="draggable" id="PL-Va" draggable="true">
+        <h4>PL-Ca2+-Xa-Va</h4>
+      </div>  
+
+    </div>
+    <div class="intrinsic">
+      <h2 class="fs-secondary-heading">Vnitřní cesta</h2>
+      <div class="path_3">
+        <div class="space_3"></div>
+
+        <div class="box vii" id="VII"></div>
+        <div class="arrow">
+          <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="251" height="16" viewBox="0 0 251 16" fill="none">
+            <path d="M250.707 8.70711C251.098 8.31658 251.098 7.68342 250.707 7.29289L244.343 0.928933C243.953 0.538408 243.319 0.538408 242.929 0.928933C242.538 1.31946 242.538 1.95262 242.929 2.34315L248.586 8L242.929 13.6569C242.538 14.0474 242.538 14.6805 242.929 15.0711C243.319 15.4616 243.953 15.4616 244.343 15.0711L250.707 8.70711ZM0 9H250V7H0L0 9Z" fill="black"/>
+          </svg>
+        </div>
+        
+        <div class="box viia" id="VIIa"><p></p></div>
+      </div>
+    </div>
+    <div class="extrinsic">
+      <h2 class="fs-secondary-heading">Vnější cesta</h2>
+      <div class="path">
+          <div class="box xii" id="XII"></div>
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="251" height="16" viewBox="0 0 251 16" fill="none">
+              <path d="M250.707 8.70711C251.098 8.31658 251.098 7.68342 250.707 7.29289L244.343 0.928933C243.953 0.538408 243.319 0.538408 242.929 0.928933C242.538 1.31946 242.538 1.95262 242.929 2.34315L248.586 8L242.929 13.6569C242.538 14.0474 242.538 14.6805 242.929 15.0711C243.319 15.4616 243.953 15.4616 244.343 15.0711L250.707 8.70711ZM0 9H250V7H0L0 9Z" fill="black"/>
+            </svg>
+          </div>
+          <div class="box xiia" id="XIIa"></div>
+
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67" fill="none">
+            <path d="M0.848667 65.119C0.848667 65.6713 1.29638 66.119 1.84867 66.119H10.8487C11.401 66.119 11.8487 65.6713 11.8487 65.119C11.8487 64.5668 11.401 64.119 10.8487 64.119H2.84867V56.119C2.84867 55.5668 2.40095 55.119 1.84867 55.119C1.29638 55.119 0.848667 55.5668 0.848667 56.119V65.119ZM64.7812 0.772324L1.14156 64.4119L2.55577 65.8262L66.1954 2.18654L64.7812 0.772324Z" fill="black"/>
+            </svg>
+          </div>
+
+          <div class="box xia" id="XIa"></div>
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="251" height="16" viewBox="0 0 251 16" fill="none">
+              <path d="M0.292878 7.29289C-0.0976466 7.68342 -0.0976466 8.31658 0.292878 8.70711L6.65684 15.0711C7.04736 15.4616 7.68053 15.4616 8.07105 15.0711C8.46158 14.6805 8.46158 14.0474 8.07105 13.6569L2.4142 8L8.07105 2.34315C8.46158 1.95262 8.46158 1.31946 8.07105 0.928933C7.68053 0.538408 7.04736 0.538408 6.65684 0.928933L0.292878 7.29289ZM251 7L0.999984 7V9L251 9V7Z" fill="black"/>
+            </svg>
+          </div>
+          <div class="box xi" id="XI"></div>
+
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
+            <path d="M64.6396 65.6396C65.1919 65.6396 65.6396 65.1919 65.6396 64.6396V55.6396C65.6396 55.0873 65.1919 54.6396 64.6396 54.6396C64.0873 54.6396 63.6396 55.0873 63.6396 55.6396V63.6396H55.6396C55.0873 63.6396 54.6396 64.0873 54.6396 64.6396C54.6396 65.1919 55.0873 65.6396 55.6396 65.6396H64.6396ZM0.292893 1.70711L63.9325 65.3467L65.3467 63.9325L1.70711 0.292893L0.292893 1.70711Z" fill="black"/>
+            </svg>
+          </div>
+
+          <div class="box ixa" id="IXa"></div>
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="251" height="16" viewBox="0 0 251 16" fill="none">
+              <path d="M0.292878 7.29289C-0.0976466 7.68342 -0.0976466 8.31658 0.292878 8.70711L6.65684 15.0711C7.04736 15.4616 7.68053 15.4616 8.07105 15.0711C8.46158 14.6805 8.46158 14.0474 8.07105 13.6569L2.4142 8L8.07105 2.34315C8.46158 1.95262 8.46158 1.31946 8.07105 0.928933C7.68053 0.538408 7.04736 0.538408 6.65684 0.928933L0.292878 7.29289ZM251 7L0.999984 7V9L251 9V7Z" fill="black"/>
+            </svg>
+          </div>
+          <div class="box ix" id="IX"></div>
+
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
+            <path d="M64.6396 65.6396C65.1919 65.6396 65.6396 65.1919 65.6396 64.6396V55.6396C65.6396 55.0873 65.1919 54.6396 64.6396 54.6396C64.0873 54.6396 63.6396 55.0873 63.6396 55.6396V63.6396H55.6396C55.0873 63.6396 54.6396 64.0873 54.6396 64.6396C54.6396 65.1919 55.0873 65.6396 55.6396 65.6396H64.6396ZM0.292893 1.70711L63.9325 65.3467L65.3467 63.9325L1.70711 0.292893L0.292893 1.70711Z" fill="black"/>
+            </svg>
+          </div>
+
+          <div class="box komplex" id="PL-VIIIa"></div>
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="251" height="16" viewBox="0 0 251 16" fill="none">
+              <path d="M0.292878 7.29289C-0.0976466 7.68342 -0.0976466 8.31658 0.292878 8.70711L6.65684 15.0711C7.04736 15.4616 7.68053 15.4616 8.07105 15.0711C8.46158 14.6805 8.46158 14.0474 8.07105 13.6569L2.4142 8L8.07105 2.34315C8.46158 1.95262 8.46158 1.31946 8.07105 0.928933C7.68053 0.538408 7.04736 0.538408 6.65684 0.928933L0.292878 7.29289ZM251 7L0.999984 7V9L251 9V7Z" fill="black"/>
+            </svg>  
+          </div>
+          <div class="box viii" id="VIII"></div>
+
+      </div>
+    </div>  
+    <div class="common">
+      <div class="space"></div>
+      <div class="content">
+        <h2 class="fs-secondary-heading">Společná cesta</h2>
+        <div class="path_2">
+          <div class="box" id="Xa"></div>
+  
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="65" viewBox="0 0 16 65" fill="none">
+              <path d="M7.29289 64.7071C7.68342 65.0976 8.31658 65.0976 8.70711 64.7071L15.0711 58.3431C15.4616 57.9526 15.4616 57.3195 15.0711 56.9289C14.6805 56.5384 14.0474 56.5384 13.6569 56.9289L8 62.5858L2.34315 56.9289C1.95262 56.5384 1.31946 56.5384 0.928933 56.9289C0.538408 57.3195 0.538408 57.9526 0.928933 58.3431L7.29289 64.7071ZM7 0L7 64H9L9 0L7 0Z" fill="black"/>
+            </svg>
+          </div>
+  
+          <div class="box" id="V"></div>
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="271" height="16" viewBox="0 0 271 16" fill="none">
+              <path d="M270.707 8.70711C271.098 8.31658 271.098 7.68342 270.707 7.29289L264.343 0.928933C263.953 0.538408 263.319 0.538408 262.929 0.928933C262.538 1.31946 262.538 1.95262 262.929 2.34315L268.586 8L262.929 13.6569C262.538 14.0474 262.538 14.6805 262.929 15.0711C263.319 15.4616 263.953 15.4616 264.343 15.0711L270.707 8.70711ZM0 9H270V7H0L0 9Z" fill="black"/>
+            </svg>
+          </div>
+          <div class="box" id="Va"></div>
+  
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67" fill="none">
+              <path d="M0.848667 65.119C0.848667 65.6713 1.29638 66.119 1.84867 66.119H10.8487C11.401 66.119 11.8487 65.6713 11.8487 65.119C11.8487 64.5668 11.401 64.119 10.8487 64.119H2.84867V56.119C2.84867 55.5668 2.40095 55.119 1.84867 55.119C1.29638 55.119 0.848667 55.5668 0.848667 56.119V65.119ZM64.7812 0.772324L1.14156 64.4119L2.55577 65.8262L66.1954 2.18654L64.7812 0.772324Z" fill="black"/>
+            </svg>
+          </div>
+  
+          <div class="box" id="PL-Va"></div>
+  
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67" fill="none">
+              <path d="M0.848667 65.119C0.848667 65.6713 1.29638 66.119 1.84867 66.119H10.8487C11.401 66.119 11.8487 65.6713 11.8487 65.119C11.8487 64.5668 11.401 64.119 10.8487 64.119H2.84867V56.119C2.84867 55.5668 2.40095 55.119 1.84867 55.119C1.29638 55.119 0.848667 55.5668 0.848667 56.119V65.119ZM64.7812 0.772324L1.14156 64.4119L2.55577 65.8262L66.1954 2.18654L64.7812 0.772324Z" fill="black"/>
+            </svg>
+          </div>
+  
+          <div class="box" id="II"></div>
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="271" height="16" viewBox="0 0 271 16" fill="none">
+              <path d="M270.707 8.70711C271.098 8.31658 271.098 7.68342 270.707 7.29289L264.343 0.928933C263.953 0.538408 263.319 0.538408 262.929 0.928933C262.538 1.31946 262.538 1.95262 262.929 2.34315L268.586 8L262.929 13.6569C262.538 14.0474 262.538 14.6805 262.929 15.0711C263.319 15.4616 263.953 15.4616 264.343 15.0711L270.707 8.70711ZM0 9H270V7H0L0 9Z" fill="black"/>
+            </svg>
+          </div>
+          <div class="box" id="IIa"></div>
+  
+          <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="148" height="148" viewBox="0 0 148 148" fill="none">
+              <path d="M0.236396 146.923C0.236396 147.476 0.684111 147.923 1.2364 147.923L10.2364 147.923C10.7887 147.923 11.2364 147.476 11.2364 146.923C11.2364 146.371 10.7887 145.923 10.2364 145.923H2.2364V137.923C2.2364 137.371 1.78868 136.923 1.2364 136.923C0.684111 136.923 0.236396 137.371 0.236396 137.923L0.236396 146.923ZM145.875 0.870652L0.529289 146.216L1.9435 147.631L147.289 2.28487L145.875 0.870652Z" fill="black"/>
+            </svg>
+          </div>
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
+              <path d="M64.6396 65.6396C65.1919 65.6396 65.6396 65.1919 65.6396 64.6396V55.6396C65.6396 55.0873 65.1919 54.6396 64.6396 54.6396C64.0873 54.6396 63.6396 55.0873 63.6396 55.6396V63.6396H55.6396C55.0873 63.6396 54.6396 64.0873 54.6396 64.6396C54.6396 65.1919 55.0873 65.6396 55.6396 65.6396H64.6396ZM0.292893 1.70711L63.9325 65.3467L65.3467 63.9325L1.70711 0.292893L0.292893 1.70711Z" fill="black"/>
+            </svg>
+          </div>
+
+          <div class="box" id="XIIIa"></div>
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="272" height="15" viewBox="0 0 272 15" fill="none">
+              <path d="M0.792879 6.79289C0.402355 7.18342 0.402355 7.81658 0.792879 8.20711L7.15684 14.5711C7.54736 14.9616 8.18053 14.9616 8.57105 14.5711C8.96158 14.1805 8.96158 13.5474 8.57105 13.1569L2.9142 7.5L8.57105 1.84315C8.96158 1.45262 8.96158 0.819457 8.57105 0.428933C8.18053 0.0384083 7.54736 0.0384083 7.15684 0.428933L0.792879 6.79289ZM271.5 6.5L1.49999 6.5V8.5L271.5 8.5V6.5Z" fill="black"/>
+            </svg>
+          </div>
+          <div class="box" id="XIII"></div>
+          <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="41" viewBox="0 0 16 41" fill="none">
+              <path d="M7.29289 40.7071C7.68342 41.0976 8.31658 41.0976 8.70711 40.7071L15.0711 34.3431C15.4616 33.9526 15.4616 33.3195 15.0711 32.9289C14.6805 32.5384 14.0474 32.5384 13.6569 32.9289L8 38.5858L2.34315 32.9289C1.95262 32.5384 1.31946 32.5384 0.928933 32.9289C0.538408 33.3195 0.538408 33.9526 0.928933 34.3431L7.29289 40.7071ZM7 0L7 40H9L9 0L7 0Z" fill="black"/>
+            </svg>
+          </div>
+
+          <div class="box" id="I"></div>
+          <div class="arrow">
+            <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="271" height="16" viewBox="0 0 271 16" fill="none">
+              <path d="M270.707 8.70711C271.098 8.31658 271.098 7.68342 270.707 7.29289L264.343 0.928933C263.953 0.538408 263.319 0.538408 262.929 0.928933C262.538 1.31946 262.538 1.95262 262.929 2.34315L268.586 8L262.929 13.6569C262.538 14.0474 262.538 14.6805 262.929 15.0711C263.319 15.4616 263.953 15.4616 264.343 15.0711L270.707 8.70711ZM0 9H270V7H0L0 9Z" fill="black"/>
+            </svg>
+          </div>
+          <div class="box" id="Ia"></div>
+
+        </div>
+      </div>
+      <div class="space_2"></div>
+    </div>
+</body>
+</html>
