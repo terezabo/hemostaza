@@ -58,6 +58,11 @@ h4 {
   padding: 0.5em;
 }
 
+h6 {
+  font-size: 0.8em;
+  text-align: center;
+}
+
 
 .container {
   display: grid;
@@ -132,7 +137,7 @@ h4 {
  .box {
   border: 2px solid #ccc;  
   height: 45px;
-  width: 130px;
+  min-width: 130px;
   border-radius: 10px;
   background-color: white;
 } 
@@ -147,6 +152,7 @@ h4 {
 
 .draggable {
   min-width: 50px;
+  height: 100%;
   text-align: center;
   background-color: #eaeaea;
   cursor: move;
